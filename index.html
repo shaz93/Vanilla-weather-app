@@ -6,28 +6,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel = "stylesheet"href="src/index.css">
     <title>My Vanilla-weather-app</title>
 </head>
 <body>
     <div class ="weather-app">
     <header>
-        <form>
-            <input type ="search"placeholder = "Enter a city.."required/>
-            <input type = "submit" value ="search"/>
+        <form class="search-form">
+            <input type ="search"placeholder = "Enter a city.."required class="search-form-input"/>
+            <input type = "submit" value ="search"class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-            <hi1>Paris</hi1>
-            <p>
+            <hi1 class="weather-app-city">Paris</hi1>
+            <p class="weather-app-details">
                 Tuesday 14:49,☁️
-            </p>
             <br/>
-            Humidity :66% , Wind :3.13km/h 
+            Humidity: <strong>66% </strong>, Wind: <strong>3.13km/h </strong>
             </p>
             </div>
-            <div>
-                🌤️12&deg;C
+            <div class="weather-app-temperature-container">
+              <div class="weather-app-icon"> 🌤️</div><div class="weather-app-temperature">12</div><div class="weather-app-unit">&deg;C</div>
+            </div>
             </div>
     </main>
     <footer>
